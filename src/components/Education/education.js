@@ -4,11 +4,11 @@ import './education.css'
 const Skills = () => {
   return (
     <div class="education-section">
-      
       <div class="education-big-image">
         <img src={`${process.env.PUBLIC_URL}/assets/edu.svg`} alt="logo" />
       </div>
       <div class="education-container">
+        <h1>Education</h1>
         <div class="education-entry">
           <div class="education-details">
             <div class="education-university">Master of Science</div>

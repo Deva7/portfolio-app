@@ -2,6 +2,7 @@
 
 .education-section {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   padding: 50px 20px;
@@ -9,60 +10,72 @@
   color: #333;
 }
 
-.education-section .container {
-  max-width: 800px;
-  flex: 2;
-  margin-left: 20px;
+.education-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: left;
-}
-
-.education-section .image-container {
-  flex: 1;
-  margin-left: 20px;
-  text-align: center;
-}
-
-.education-section .image-container img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.education-section h1 {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: #222;
-}
-
-.education-card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 30px;
   margin-bottom: 30px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.education-card h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
   color: #333;
 }
 
-.education-card p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+.education-big-image {
+  flex: 1;
+  text-align: center;
+  margin-left: 20px;
 }
 
-.education-card .university-logo {
+.education-big-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.education-container {
+  flex: 2;
+  max-width: 1100px;
+  margin-right: 20px;
+}
+
+.education-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-university {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-degree-year {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.education-logo {
   width: 60px;
   height: 60px;
-  margin-top: 10px;
+  margin-left: 20px;
   object-fit: contain;
-  float: right;
 }
 
 @media (max-width: 1024px) {
@@ -71,34 +84,28 @@
     align-items: center;
   }
 
-  .education-section .container {
-    max-width: 90%;
-    margin-bottom: 30px;
-  }
-
-  .education-section .image-container {
+  .education-big-image {
     margin-left: 0;
+    margin-bottom: 20px;
   }
 
-  .education-section .image-container img {
+  .education-big-image img {
     max-width: 70%;
   }
 
-  .education-section h1 {
-    font-size: 2.5rem;
+  .education-container {
+    margin-right: 0;
+    max-width: 90%;
   }
 
-  .education-card h2 {
-    font-size: 1.6rem;
+  .education-entry {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .education-card p {
-    font-size: 1.1rem;
-  }
-
-  .education-card .university-logo {
-    width: 50px;
-    height: 50px;
+  .education-logo {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -107,25 +114,25 @@
     padding: 30px 15px;
   }
 
-  .education-section .image-container img {
+  .education-big-image img {
     max-width: 60%;
   }
 
-  .education-section h1 {
-    font-size: 2rem;
+  .education-entry {
+    padding: 15px;
   }
 
-  .education-card h2 {
-    font-size: 1.4rem;
+  .education-university {
+    font-size: 1.6rem;
   }
 
-  .education-card p {
+  .education-degree-year {
     font-size: 1rem;
   }
 
-  .education-card .university-logo {
-    width: 40px;
-    height: 40px;
+  .education-logo {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -134,24 +141,20 @@
     padding: 20px 10px;
   }
 
-  .education-section .image-container img {
+  .education-big-image img {
     max-width: 50%;
   }
 
-  .education-section h1 {
-    font-size: 1.75rem;
+  .education-university {
+    font-size: 1.4rem;
   }
 
-  .education-card h2 {
-    font-size: 1.2rem;
-  }
-
-  .education-card p {
+  .education-degree-year {
     font-size: 0.9rem;
   }
 
-  .education-card .university-logo {
-    width: 30px;
-    height: 30px;
+  .education-logo {
+    width: 40px;
+    height: 40px;
   }
 }

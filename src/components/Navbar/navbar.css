@@ -4,21 +4,21 @@
     height: 5rem;
     width: 100vw;
     max-width: 95rem;
-    margin: 0 auto;
+    margin: 0 auto 0 50px;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 3;
 }
 
 .logo {
     object-fit: cover;
-    height: 3rem;
-    width: 4rem;
-    margin-right: auto; /* Aligns logo to the left */
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem; /* Aligns logo to the left */
 }
 
 .desktopMenu {
@@ -26,11 +26,14 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    padding: 2rem;
+    margin-left: 7rem;
 }
 
 .desktopMenuListItem {
-    margin: 0 2rem;
+    margin: 0 5rem;
     cursor: pointer;
+    font-size: large;
 }
 
 .desktopMenuListItem:hover {
