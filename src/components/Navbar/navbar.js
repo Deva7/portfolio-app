@@ -1,29 +1,6 @@
-// import React from 'react';
-// import './navbar.css';
-// import { Link } from 'react-scroll';
-
-// const Navbar = () => {
-//   return (
-//     <nav className='navbar'>
-//       <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt='logo' className='logo' />
-//       <div className="desktopMenu">
-//         <Link to='home' className='desktopMenuListItem'>Home</Link>
-//         <Link to='education' className='desktopMenuListItem'>Education</Link>
-//         <Link to='experience' className='desktopMenuListItem'>Experience</Link>
-//         <Link to='about' className='desktopMenuListItem'>About</Link>
-//       </div>
-//       <button className='desktopMenuBtn'>
-//         <Link to='contact' className='desktopContactBtn'>Contact Me</Link>
-//       </button>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
-
 import React, { useState } from 'react';
 import './navbar.css';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,10 +15,10 @@ const Navbar = () => {
           <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" />
         </div>
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          <a href="#home">Home</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#about">About</a>
+          <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+          <Link activeClass='active' to='education-section' spy={true} smooth={true} offset={0} duration={500}>Education</Link>
+          <Link activeClass='active' to='experience-section' spy={true} smooth={true} offset={0} duration={500}>Experience</Link>
+          <Link activeClass='active' to='about-section' spy={true} smooth={true} offset={-50} duration={500}>About</Link>
         </div>
         <a href="#contact" className="contact-btn">Contact Me</a>
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
