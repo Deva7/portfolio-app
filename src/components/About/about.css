@@ -1,54 +1,81 @@
-/* About.css */
-
 .about-section {
-    padding: 50px 20px;
-    background-color: #f4f4f9;
-    color: #333;
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  gap: 20px;
+}
+
+.about-content {
+  flex: 1;
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
     text-align: center;
   }
-  
-  .about-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .about-section h1 {
-    font-size: 2.5rem;
+
+  .about-content {
     margin-bottom: 20px;
-    color: #222;
+    text-align: center;
   }
-  
-  .about-section p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
+
+  .about-content h1 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 30px 15px;
-    }
-  
-    .about-section h1 {
-      font-size: 2rem;
-    }
-  
-    .about-section p {
-      font-size: 1rem;
-    }
+
+  .about-content p {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 480px) {
-    .about-section {
-      padding: 20px 10px;
-    }
-  
-    .about-section h1 {
-      font-size: 1.75rem;
-    }
-  
-    .about-section p {
-      font-size: 0.9rem;
-    }
+
+  .about-image {
+    justify-content: center;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px 10px;
+  }
+
+  .about-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+}
