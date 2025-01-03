@@ -12,7 +12,9 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" />
+          <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500}>
+            <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" />
+          </Link>
         </div>
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
@@ -20,7 +22,7 @@ const Navbar = () => {
           <Link activeClass='active' to='experience-section' spy={true} smooth={true} offset={0} duration={500}>Experience</Link>
           <Link activeClass='active' to='about-section' spy={true} smooth={true} offset={-50} duration={500}>About</Link>
         </div>
-        <Link activeClass='active' to='contact-section' spy={true} smooth={true} offset={-50} duration={500} className="contact-btn">Contact Me</Link>
+        <Link activeClass='active' to='contact-section' spy={true} smooth={true} offset={50} duration={500} className="contact-btn">Contact Me</Link>
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           ☰
         </button>
