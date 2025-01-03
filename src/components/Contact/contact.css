@@ -4,7 +4,7 @@
     align-items: center;
     min-height: 100vh; /* Ensures it fills the viewport */
     padding: 20px;
-    background-color: #f4f4f9;
+    /* background-color: #f4f4f9; */
   }
   
   .contact-container {
@@ -27,7 +27,7 @@
   .contact-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: #222;
+    color: black;
     text-align: center;
   }
   
@@ -53,14 +53,14 @@
   .form-group label {
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #555;
+    color: black;
   }
   
   .form-group input,
   .form-group textarea {
     padding: 12px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 3px solid green;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
