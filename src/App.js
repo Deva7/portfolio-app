@@ -3,6 +3,7 @@ import Intro from "./components/Intro/intro"
 import Education from "./components/Education/education";
 import About from "./components/About/about";
 import Experience from "./components/Experience/experience";
+import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Education />
       <Experience />
       <About />
+      <Contact />
       <Footer />
     </div>
   );

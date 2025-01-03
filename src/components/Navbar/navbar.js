@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link activeClass='active' to='experience-section' spy={true} smooth={true} offset={0} duration={500}>Experience</Link>
           <Link activeClass='active' to='about-section' spy={true} smooth={true} offset={-50} duration={500}>About</Link>
         </div>
-        <a href="#contact" className="contact-btn">Contact Me</a>
+        <Link activeClass='active' to='contact-section' spy={true} smooth={true} offset={-50} duration={500} className="contact-btn">Contact Me</Link>
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           ☰
         </button>

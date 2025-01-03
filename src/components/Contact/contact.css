@@ -1,0 +1,155 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it fills the viewport */
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .contact-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .contact-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .contact-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #777;
+    background-color: #fff;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 1.125rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* .contact-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* .contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  } */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact-content {
+      margin-bottom: 20px;
+    }
+  
+    .contact-content h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .contact-content p {
+      font-size: 1rem;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  
+    /* .contact-image {
+      justify-content: center;
+    } */
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section {
+      padding: 20px 10px;
+    }
+  
+    .contact-content h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+  
+    .contact-content p {
+      font-size: 0.9rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  
