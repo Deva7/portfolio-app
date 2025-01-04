@@ -4,9 +4,6 @@ import './education.css';
 const Education = () => {
   return (
     <div className="education-section">
-      <div className="education-big-image">
-        <img src={`${process.env.PUBLIC_URL}/assets/edu.png`} alt="Education" />
-      </div>
       <div className="education-container">
         <h1>Education</h1>
         <div className="education-entry">

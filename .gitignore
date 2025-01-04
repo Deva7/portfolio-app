@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# files
+public/assets/abc.png
+public/assets/hill2.jpeg
+public/assets/Picture1.png
+/.gitignore
+
 # testing
 /coverage
 

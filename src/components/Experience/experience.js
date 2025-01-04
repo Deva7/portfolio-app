@@ -44,9 +44,6 @@ const experiences = [
 const Experience = () => {
   return (
     <section className="experience-section">
-      <div className="image-container">
-        <img src={`${process.env.PUBLIC_URL}/assets/work1.png`} alt="Experience" />
-      </div>
       <div className="container">
         <h1>Experience</h1>
         {experiences.map((exp, index) => (

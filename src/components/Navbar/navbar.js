@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500}>
-            <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" />
+            <img src={`${process.env.PUBLIC_URL}/assets/Picture1.png`} alt="Logo" />
           </Link>
         </div>
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
