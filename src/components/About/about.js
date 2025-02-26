@@ -9,13 +9,9 @@ const About = () => {
         <div className="about-content">
           <h1>About Me</h1>
           <p>
-            Welcome to our website! We are dedicated to providing the best
-            services and solutions for our clients. <br></br>Our team works hard to
-            ensure customer satisfaction and deliver high-quality results.
-          <br></br>
-            Our mission is to innovate and lead in our industry, while
-            maintaining integrity and trust in everything we do. Thank you for
-            choosing us!
+            With 6 years of experience in software design and development, I specialize in building scalable applications, 
+            <br></br>with expertise in MicroServices, API design, cloud computing, and data engineering. 
+            <br /><br />I'm keen on opportunities in Python, DevOps, AI/ML, cloud solutions, and large-scale distributed systems.
           </p>
         </div>
       </div>
