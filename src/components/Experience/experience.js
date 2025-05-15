@@ -12,7 +12,7 @@ const experiences = [
       'Improving authentication security through ABAC with Open Policy Agent (OPA) and OAuth 2.0.',
       'Managed CI/CD pipelines, code reviews, and team collaboration.'
     ],
-    startDate: 'Dec 2023',
+    startDate: 'Aug 2023',
     endDate: 'Present',
     techStack: ['python', 'fastapi', 'sqlalchemy', 'openapi', 'oracle', 'githubactions', 'docker', 'ansible', 'kubernetes', 'azure', 'amazonwebservices', 'jira']
   },
