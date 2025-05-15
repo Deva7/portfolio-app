@@ -5,7 +5,7 @@ import './experience.css';
 const experiences = [
   {
     role: 'API Lead Developer',
-    company: 'Sherwin-Williams',
+    company: 'Squad Software Inc.',
     responsibilities: [
       'Designing, Developed, Led, and maintained secure microservices.',
       'Developed RESTful and GraphQL APIs.',
@@ -13,7 +13,7 @@ const experiences = [
       'Managed CI/CD pipelines, code reviews, and team collaboration.'
     ],
     startDate: 'Dec 2023',
-    endDate: 'Sep 2024',
+    endDate: 'Present',
     techStack: ['python', 'fastapi', 'sqlalchemy', 'openapi', 'oracle', 'githubactions', 'docker', 'ansible', 'kubernetes', 'azure', 'amazonwebservices', 'jira']
   },
   {
