@@ -4,40 +4,45 @@ import './experience.css';
 
 const experiences = [
   {
+    role: 'API Lead Developer',
+    company: 'Sherwin-Williams',
+    responsibilities: [
+      'Designing, Developed, Led, and maintained secure microservices.',
+      'Developed RESTful and GraphQL APIs.',
+      'Improving authentication security through ABAC with Open Policy Agent (OPA) and OAuth 2.0.',
+      'Managed CI/CD pipelines, code reviews, and team collaboration.'
+    ],
+    startDate: 'Dec 2023',
+    endDate: 'Sep 2024',
+    techStack: ['python', 'fastapi', 'sqlalchemy', 'openapi', 'oracle', 'githubactions', 'docker', 'ansible', 'kubernetes', 'azure', 'amazonwebservices', 'jira']
+  },
+  {
     role: 'Software Engineer',
-    company: 'TechCorp Solutions',
+    company: 'UiRevolution India Pvt. Ltd.',
     responsibilities: [
-      'Developed and maintained web applications using React and Node.js.',
-      'Collaborated with cross-functional teams to design scalable solutions.',
-      'Implemented RESTful APIs and ensured optimal performance.'
+      'Designed, developed, and deployed web and mobile applications ',
+      'Implemented CMS for backend application and optimized performance.',
+      'Developed PaaS and SaaS solutions for clients.',
+      'Deployed applications on AWS Cloud.',
+      'Configured Atlas MongoDB cloud for database migration.',
     ],
-    startDate: 'Jan 2020',
-    endDate: 'Dec 2022',
-    techStack: ['react', 'nodejs', 'mongodb', 'aws']
+    startDate: 'Jul 2018',
+    endDate: 'Feb 2021',
+    techStack: ['html5', 'css3', 'javascript', 'figma', 'nodejs', 'vuejs', 'react', 'python', 'mongodb', 'microsoftsqlserver', 'githubactions', 'bitbucket', 'docker', 'amazonwebservices', 'jira', 'salesforce', 'zohocreator']
   },
   {
-    role: 'Frontend Developer',
-    company: 'Innovatech Inc.',
+    role: 'System Administrator',
+    company: 'ITR Infratech',
     responsibilities: [
-      'Built responsive user interfaces with HTML, CSS, and JavaScript.',
-      'Optimized application performance and ensured cross-browser compatibility.',
-      'Worked closely with UX designers to enhance user experience.'
+      'Automated system tasks using shell scripts.',
+      'Managed and maintained Linux servers.',
+      'Configured and managed MySQL databases.',
+      'Implemented security measures and monitored system performance.',
+      'Provided technical support and troubleshooting.'
     ],
-    startDate: 'May 2018',
-    endDate: 'Dec 2019',
-    techStack: ['html5', 'css3', 'javascript', 'figma']
-  },
-  {
-    role: 'Junior Developer',
-    company: 'Startup Hub',
-    responsibilities: [
-      'Assisted in developing and testing mobile applications.',
-      'Participated in code reviews and bug fixing.',
-      'Contributed to project documentation and team meetings.'
-    ],
-    startDate: 'Jan 2016',
-    endDate: 'Apr 2018',
-    techStack: ['java', 'android', 'sqlite', 'git']
+    startDate: 'Jul 2016',
+    endDate: 'Jul 2018',
+    techStack: ['python', 'react', 'git', 'heroku', 'mysql', 'linux', 'jira']
   }
 ];
 
