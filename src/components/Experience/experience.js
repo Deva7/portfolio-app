@@ -8,7 +8,7 @@ const experiences = [
     company: 'Squad Software Inc.',
     responsibilities: [
       'Designing, Developed, Led, and maintained secure microservices.',
-      'Developed RESTful and GraphQL APIs.',
+      'Developed APIs.',
       'Improving authentication security through ABAC with Open Policy Agent (OPA) and OAuth 2.0.',
       'Managed CI/CD pipelines, code reviews, and team collaboration.',
       'Implemented Cloud Architecture for deploying microservices and ETL Processes',
