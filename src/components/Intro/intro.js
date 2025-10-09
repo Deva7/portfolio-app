@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 const Intro = () => {
   const handleClick = () => {
-    window.open('https://drive.google.com/file/d/1rVs_lAbugCC6vssm7N2oiJsinjfDf57Y/view?usp=drive_link', '_blank');
+    window.open('', '_blank');
   };
   return (
     <section id="intro">
