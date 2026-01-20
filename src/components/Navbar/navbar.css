@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar styles */
@@ -8,7 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  /* Use safe-area-aware symmetric horizontal padding so left/right are equal on devices like iPad */
+  padding-block: 1rem;
+  padding-inline: calc(env(safe-area-inset-left, 0px) + 1rem) calc(env(safe-area-inset-right, 0px) + 1rem);
   position: fixed; /* Fixes navbar at the top */
   top: 0;
   left: 0;
@@ -23,10 +26,17 @@
   cursor: pointer;
 }
 
+.logo {
+  flex-shrink: 0; /* don't let logo collapse when space is tight */
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 5rem;
+  gap: 2rem; /* smaller gap to avoid overflow */
+  flex: 1 1 auto; /* allow shrinking and growing as needed */
+  min-width: 0; /* allow flex children to shrink properly inside the flex container */
+  justify-content: center; /* center the nav items horizontally */
 }
 
 .nav-links a {
@@ -35,6 +45,8 @@
   font-weight: bold;
   font-size: 1.5rem;
   cursor: pointer;
+
+  white-space: nowrap; /* keep link text on a single line to avoid unexpected wrapping */
 }
 
 .nav-links a:hover {
@@ -49,6 +61,8 @@
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  flex-shrink: 0; /* ensure button does not shrink and remains visible */
+  margin-left: 1rem;
 }
 
 .mobile-menu-toggle {
@@ -84,6 +98,23 @@
 
   .mobile-menu-toggle {
     display: block;
+  }
+}
+
+/* Tablet / smaller desktops: further tighten spacing to avoid overflow */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .nav-links a {
+    font-size: 1.15rem;
+  }
+
+  .contact-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
   }
 }
 
