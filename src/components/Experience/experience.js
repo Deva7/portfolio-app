@@ -4,6 +4,22 @@ import './experience.css';
 
 const experiences = [
   {
+    role: 'Senior Full Stack Developer',
+    company: 'Delta Airlines',
+    responsibilities: [
+      'Developed and maintained Python and Java/Spring Boot backend services and REST APIs',
+      'supporting airline flight onboarding, catering, and meal-service operations across distributed enterprise systems.',
+      'Built batch processing and data integration workflows',
+      'using Java, Python, Oracle/Exadata, Amazon RDS, Apache Kafka, and IBM MQ for data ingestion, validation, transformation, and downstream distribution.',
+      'Integrated AWS services including API Gateway, Lambda, S3, CloudWatch, Secrets Manager, EC2, and CloudFormation, and migrated CloudFormation-based REST application infrastructure to AWS CDK.',
+      'Deployed and supported containerized Python and Java/Spring Boot applications on ROSA/OpenShift, troubleshooting application, networking, configuration, database, messaging, and deployment issues.',
+      'Contributed to GitLab CI/CD and Argo CD automation, end-to-end integration testing, and Agile/Scrum delivery while collaborating with cross-functional teams across Python, Java, AWS, Kafka, IBM MQ, Oracle, and OpenShift environments.'
+    ],
+    startDate: 'Sep 2026',
+    endDate: 'Present',
+    techStack: ['Java Spring Boot', 'Python', 'ROSA', 'gitlab', 'amazonwebservices', 'Agility', 'ArgoCD', 'Kafka', 'IBM MQ', 'Control-M']
+  },
+  {
     role: 'Python AWS Developer',
     company: 'J.P Morgan Chase',
     responsibilities: [
@@ -14,7 +30,7 @@ const experiences = [
       'DynamoDB Database configuration setup within AWS Infra with alerting.'
     ],
     startDate: 'Nov 2025',
-    endDate: 'Present',
+    endDate: 'Jul 2026',
     techStack: ['python', 'openapi', 'github', 'amazonwebservices', 'jira', 'Terraform']
   },
   {
@@ -29,7 +45,7 @@ const experiences = [
       'Created Oracle Database views and used Oracle for all database config.'
     ],
     startDate: 'Dec 2023',
-    endDate: 'Sep 2024',
+    endDate: 'Sep 2025',
     techStack: ['python', 'fastapi', 'sqlalchemy', 'openapi', 'oracle', 'githubactions', 'docker', 'ansible', 'kubernetes', 'azure', 'amazonwebservices', 'jira']
   },
   {
@@ -52,14 +68,13 @@ const experiences = [
     responsibilities: [
       'Automated system tasks using shell scripts.',
       'Managed and maintained Linux servers.',
-      'Configured and managed Oracle databases.',
+      'Configured and managed MySQL databases.',
       'Implemented security measures and monitored system performance.',
-      'Provided technical support and troubleshooting.',
-      'Designed and developed web app using Python'  
+      'Provided technical support and troubleshooting.'
     ],
-    startDate: 'Jul 2016',
+    startDate: 'Aug 2016',
     endDate: 'Jul 2018',
-    techStack: ['python', 'react', 'git', 'heroku', 'Oracle', 'linux', 'jira']
+    techStack: ['python', 'react', 'git', 'heroku', 'mysql', 'linux', 'jira']
   }
 ];
 
