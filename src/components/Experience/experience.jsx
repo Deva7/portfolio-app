@@ -6,13 +6,11 @@ const experiences = [
     role: 'Senior Full Stack Developer',
     company: 'Delta Airlines',
     responsibilities: [
-      'Developed and maintained Python and Java/Spring Boot backend services and REST APIs',
-      'supporting airline flight onboarding, catering, and meal-service operations across distributed enterprise systems.',
-      'Built batch processing and data integration workflows',
-      'using Java, Python, Oracle/Exadata, Amazon RDS, Apache Kafka, and IBM MQ for data ingestion, validation, transformation, and downstream distribution.',
-      'Integrated AWS services including API Gateway, Lambda, S3, CloudWatch, Secrets Manager, EC2, and CloudFormation, and migrated CloudFormation-based REST application infrastructure to AWS CDK.',
-      'Deployed and supported containerized Python and Java/Spring Boot applications on ROSA/OpenShift, troubleshooting application, networking, configuration, database, messaging, and deployment issues.',
-      'Contributed to GitLab CI/CD and Argo CD automation, end-to-end integration testing, and Agile/Scrum delivery while collaborating with cross-functional teams across Python, Java, AWS, Kafka, IBM MQ, Oracle, and OpenShift environments.'
+      'Developed and maintained Python and Java/Spring Boot backend services and REST APIs.',
+      'Built data integration and batch processing workflows using Java, Python, Oracle, AWS, Kafka, and IBM MQ.',
+      'Integrated AWS services like API Gateway, Lambda, S3, CloudWatch, and Secrets Manager for enterprise systems.',
+      'Deployed and supported containerized applications on ROSA/OpenShift and resolved production issues.',
+      'Contributed to GitLab CI/CD, Argo CD, and Agile delivery across distributed engineering teams.'
     ],
     startDate: 'Sep 2026',
     endDate: 'Present',
@@ -91,13 +89,13 @@ const Experience = () => {
                 <li key={i}>{resp}</li>
               ))}
             </ul> */}
-            <div class="role-company">{exp.company}
-              <div class="role-header">
-                <span class="role-name">{exp.role}</span>
-                <span class="date-range">{exp.startDate} - {exp.endDate}</span>
+            <div className="role-company">{exp.company}
+              <div className="role-header">
+                <span className="role-name">{exp.role}</span>
+                <span className="date-range">{exp.startDate} - {exp.endDate}</span>
               </div>
             </div>
-            <ul>
+            <ul className="responsibility-list">
               {exp.responsibilities.map((resp, i) => (
                 <li key={i}>{resp}</li>
               ))}

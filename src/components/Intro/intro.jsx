@@ -21,10 +21,13 @@ const Intro = () => {
           <Link activeClass='active' to='contact-section' spy={true} smooth={true} offset={50} duration={500}>
             <button type='button' className='btn'>Hire Me</button>
           </Link>
-          <button type='button' className='btn' onClick={handleClick}>View Resume</button>
+          <a>
+            <button type='button' className='btn' onClick={handleClick}>View Resume</button>
+          </a>
+          
         </div>
       </div>
-      <img src={`${process.env.PUBLIC_URL}/assets/Main_logo.png`} alt="Profile" className="bg" />
+      <img src="/assets/Main_logo.png" alt="Profile" className="bg" />
     </section>
   );
 };
