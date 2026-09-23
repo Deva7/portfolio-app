@@ -13,7 +13,7 @@ const Education = () => {
             <div className="education-degree-year">Cleveland State University</div>
             <div className="education-degree-year">2022 - 2023</div>
           </div>
-          <img src={`${process.env.PUBLIC_URL}/assets/CSU_logo.png`} alt="Cleveland State University Logo" className="education-logo" />
+          <img src="/assets/CSU_logo.png" alt="Cleveland State University Logo" className="education-logo" />
         </div>
         <div className="education-entry">
           <div className="education-details">
@@ -22,7 +22,7 @@ const Education = () => {
             <div className="education-degree-year">Andhra University</div>
             <div className="education-degree-year">2012 - 2016</div>
           </div>
-          <img src={`${process.env.PUBLIC_URL}/assets/AU_logo.png`} alt="Andhra University Logo" className="education-logo" />
+          <img src="/assets/AU_logo.png" alt="Andhra University Logo" className="education-logo" />
         </div>
       </div>
     </div>

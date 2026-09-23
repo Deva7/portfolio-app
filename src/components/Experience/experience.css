@@ -53,10 +53,48 @@
   text-align: left;
 }
 
-.experience-card ul li {
-  font-size: 1.2rem;
+.responsibility-list {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
   line-height: 1.8;
+  color: #2a2a2a;
+  letter-spacing: 0.01em;
+}
+
+.responsibility-list li {
   margin-bottom: 10px;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: baseline;          
+  width: 100%;
+}
+
+.role-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.date-range {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap; 
+}
+
+.role-company {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
 }
 
 .tech-stack {
