@@ -4,15 +4,12 @@
   "private": true,
   "homepage": "https://www.devapotarlanka.com",
   "dependencies": {
-<<<<<<< HEAD
     "@babel/helpers": "^7.26.10",
     "@babel/runtime": "^7.26.10",
     "cra-template": "1.2.0",
     "http-proxy-middleware": "^3.0.5",
     "nth-check": "^2.1.1",
     "postcss": "^8.5.3",
-=======
->>>>>>> master
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scroll": "^1.9.3",
